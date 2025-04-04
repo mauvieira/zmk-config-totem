@@ -108,10 +108,10 @@
 
         navigation {
             bindings = <
-            &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans    &trans  &trans    &kp UP_ARROW    &trans     &trans
-            &trans  &trans  &trans        &trans           &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans
-&bt BT_NXT  &trans  &trans  &trans        &trans           &trans    &trans  &trans    &trans          &trans     &trans  &trans
-                            &trans        &trans           &trans    &trans  &trans    &trans
+            &bt BT_CLR_ALL  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans    &trans  &trans    &kp UP_ARROW    &trans     &trans
+            &trans          &trans  &trans        &trans           &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans
+&bt BT_NXT  &trans          &trans  &trans        &trans           &trans    &trans  &trans    &trans          &trans     &trans  &trans
+                                    &trans        &trans           &trans    &trans  &trans    &trans
             >;
         };
 
