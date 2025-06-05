@@ -84,10 +84,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q       &kp W       &kp F        &kp P           &kp B            &kp K      &kp L        &kp U        &kp Y       &kp SEMI
+         &kp Q       &kp W       &kp F        &kp P           &lt 4 B          &kp K      &kp L        &kp U        &kp Y       &kp SEMI
          &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T     &kp G            &kp M      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
 &kp ESC  &kp Z       &kp X       &kp C        &kp D           &kp V            &kp J      &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp ENTER
-                                 &lt 2 TAB    &kp LEFT_SHIFT  &kp BACKSPACE    &lt 3 TAB  &lt 2 SPACE  &lt 1 COLON
+                                 &kp TAB      &kp LEFT_SHIFT  &kp BACKSPACE    &lt 3 TAB  &lt 2 SPACE  &lt 1 COLON
             >;
         };
 
@@ -108,10 +108,10 @@
 
         navigation {
             bindings = <
-            &bt BT_CLR_ALL  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans    &trans  &trans    &kp UP_ARROW    &trans     &trans
-            &trans          &trans  &trans        &trans           &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans
-&bt BT_NXT  &trans          &trans  &trans        &trans           &trans    &trans  &trans    &trans          &trans     &trans  &trans
-                                    &trans        &trans           &trans    &trans  &trans    &trans
+        &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans    &trans  &trans    &kp UP_ARROW    &trans     &trans
+        &trans  &trans  &trans        &trans           &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans        &trans           &trans    &trans  &trans    &trans          &trans     &trans  &trans
+                        &trans        &trans           &trans    &trans  &trans    &trans
             >;
         };
 
@@ -124,12 +124,12 @@
             >;
         };
 
-        layer_4 {
+        Bluetooth {
             bindings = <
-                &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-                &trans  &trans  &trans  &trans      &trans        &trans         &trans         &trans         &trans         &trans
-&bt BT_CLR_ALL  &trans  &trans  &trans  &trans      &trans        &trans         &trans         &trans         &trans         &trans         &trans
-                                &trans  &trans      &trans        &trans         &trans         &trans
+                &trans  &trans  &trans  &trans  &trans    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+                &trans  &trans  &trans  &trans  &trans    &bt BT_PRV     &bt BT_NXT     &trans         &trans         &trans
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans    &trans         &trans         &trans         &trans         &trans         &trans
+                                &trans  &trans  &trans    &trans         &trans         &trans
             >;
         };
     };
